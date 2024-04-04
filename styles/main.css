@@ -13,6 +13,7 @@ body {
   user-select: none;
   font-family: Inter;
   line-height: 150%;
+  min-width: 360px;
 }
 
 a {
@@ -31,7 +32,8 @@ a {
   height: 60px;
   margin: auto;
   position: sticky;
-  top: 10px;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .company a {
@@ -62,7 +64,6 @@ a {
 }
 
 .menu {
-  border-radius: 5px;
   transition: 1s;
 }
 
@@ -75,6 +76,17 @@ a {
 
 .menu__list__item {
   transition: 0.5s;
+}
+
+.menu__contacts {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.menu__contacts a {
+  margin: 5px;
+  cursor: pointer;
 }
 
 .whatsapp {
@@ -138,14 +150,12 @@ a {
 
 @media (hover:hover) {
   .menu__list__item:hover,
-  .whatsapp:hover,
   .header__burger-menu:hover {
     transform: scale(1.1);
   }
 }
 
 .menu__list__item:active,
-.whatsapp:active,
 .header__burger-menu:active {
   transition: 0.2s;
   transform: scale(0.9);
@@ -158,23 +168,32 @@ a {
     position: absolute;
     right: 0;
     top: 60px;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
     width: 100%;
+    background: rgba(0, 0, 0, 0.9);
     transform: translateX(-150%);
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .menu_show {
     transform: translateX(0);
   }
 
+  .menu__contacts {
+    display: block;
+  }
+
   .menu__list {
     display: block;
+    padding: 0;
   }
 
   .menu__list__item {
     width: fit-content;
-    margin: auto;
+    margin: 20px auto;
   }
 
   .header__burger-menu {
@@ -186,5 +205,14 @@ a {
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
+  }
+}
+
+@media (max-width: 460px) {
+  .whatsapp {
+    font-size: 0.8rem;
+  }
+  .company a {
+    font-size: 1.5rem;
   }
 }
