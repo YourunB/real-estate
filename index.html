@@ -67,6 +67,35 @@
         </div>
       </div>
     </section>
+
+    <section class="advantages" id="advantages">
+      <div class="advantages__box">
+        <h3 class="advantages__box__title">Мы берём на себя (услуги для арендодателей):</h3>
+        <ol class="advantages__box__list">
+          <li class="advantages__box__list__item">Стабильный трафик привлечённых арендаторов.</li>
+          <li class="advantages__box__list__item">Увеличение прибыли со сдачи объекта.</li>
+          <li class="advantages__box__list__item">Полный цикл работы с арендатором.</li>
+          <li class="advantages__box__list__item">Осуществление охраны.</li>
+          <li class="advantages__box__list__item">Клининг Вашего объекта.</li>
+          <li class="advantages__box__list__item">Системное заселение и выселение платёжеспособных граждан.</li>
+        </ol>
+        <button id="btn-open-application" class="advantages__box__btn">Оставить заявку</button>
+      </div>
+      <div class="window-application" id="window-application">
+        <form class="window-application__form">
+          <h3>Форма заявки</h3>
+          <label>Имя:</label>
+          <input type="text" minlength="3" class="window-application__form__input" required>
+          <label>Телефон:</label>
+          <input class="window-application__form__input" placeholder="+7(991)1148372" type="tel" pattern="\+7\([0-9]{3}\)[0-9]{7}" required>
+          <label>Ожидаемый доход &#8381;:</label>
+          <input class="window-application__form__input" minlength="1" type="number" required>
+          <div class="controls-wrapper">
+            <button class="window-application__form__btn" id="btn-cancel-application">Отмена</button><button class="window-application__form__btn">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <script src="./main.js"></script>

@@ -4,6 +4,9 @@ const form = document.getElementById('form-calculate');
 const btnCalculate = document.getElementById('btn-form-calculate');
 const overlay = document.getElementById('overlay');
 const btnModal = document.getElementById('modal-btn');
+const btnCancelApplication = document.getElementById('btn-cancel-application');
+const windowApplication = document.getElementById('window-application');
+const btnOpenApplication = document.getElementById('btn-open-application');
 
 btnMenu.addEventListener('click', () => {
   menu.classList.toggle('menu_show');
@@ -12,7 +15,6 @@ btnMenu.addEventListener('click', () => {
 });
 
 btnCalculate.addEventListener('click', (event) => {
-  event.preventDefault();
   if (form.checkValidity()) overlay.classList.add('overlay_show');
   else return;
 });
@@ -23,4 +25,15 @@ btnModal.addEventListener('click', () => {
 
 overlay.addEventListener('click', () => {
   overlay.classList.remove('overlay_show');
+});
+
+btnCancelApplication.addEventListener('click', (event) => {
+  event.preventDefault();
+  windowApplication.classList.remove('window-application_show');
+  const inputs = windowApplication.getElementsByClassName('window-application__form__input');
+  Array.from(inputs).forEach((input) => input.value = '');
+});
+
+btnOpenApplication.addEventListener('click', () => {
+  windowApplication.classList.add('window-application_show');
 });
