@@ -175,6 +175,7 @@ a {
   max-width: 1440px;
   margin: auto;
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
@@ -323,6 +324,11 @@ a {
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
+  }
+
+  .confidence__content {
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
 
