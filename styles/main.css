@@ -14,6 +14,7 @@ body {
   font-family: Inter;
   line-height: 150%;
   min-width: 360px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 a {
@@ -161,7 +162,73 @@ a {
   transform: scale(0.9);
 }
 
-/*--------------------------------------------------------*/
+/*-----------------confidence-section-------------------------*/
+
+.confidence {
+  background-image: url('../assets/images/confidence.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.confidence__content {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.confidence__content__text h1 {
+  font-size: 1.5rem;
+}
+
+.form-calculate {
+  max-width: 320px;
+  width: 100%;
+  padding: 20px;
+  background: black;
+  border-radius: 5px;
+}
+
+.form-calculate h3 {
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.form-calculate__input,
+.form-calculate__btn {
+  width: 100%;
+  margin: 10px 0;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+}
+
+.form-calculate__btn {
+  background: none;
+  border: solid 2px white;
+  color: white;
+  font-weight: 700;
+  min-height: 50px;
+  transition: 0.7s;
+}
+
+@media (hover:hover) {
+  .form-calculate__btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.form-calculate__btn:active {
+  transform: scale(0.9);
+}
+
+/*------------------------------------------------------------*/
 
 @media (max-width: 900px) {
   .menu {
