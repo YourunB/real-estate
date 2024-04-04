@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+  background: black;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  color: white;
+  user-select: none;
+  font-family: Inter;
+  line-height: 150%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*---------------------------header-----------------------------*/
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.company a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: 'Iowan Old Style';
+  font-size: 2rem;
+  transition: 0.7s;
+}
+
+
+@media (hover:hover) {
+  .company a:hover {
+    letter-spacing: 0.5rem;
+  }
+}
+
+.company a:active {
+  transition: 0.2;
+  transform: scale(0.9);
+  letter-spacing: 0;
+}
+
+.company__logo {
+  width: 50px;
+}
+
+menu {}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu__list__item {
+  transition: 0.5s;
+}
+
+@media (hover:hover) {
+  .menu__list__item:hover {
+    transform: scale(1.1);
+  }
+}
+
+.menu__list__item:active {
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+
+/*--------------------------------------------------------*/
