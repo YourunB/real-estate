@@ -33,6 +33,7 @@ a {
   height: 60px;
   margin: auto;
   position: sticky;
+  z-index: 900;
   top: 0;
   background: rgba(0, 0, 0, 0.9);
 }
@@ -420,7 +421,7 @@ a {
   position: relative;
   min-height: 600px;
   width: 100%;
-  border: solid 2px white;
+  border-radius: 5px;
   overflow: hidden;
   display: flex;
   gap: 10px;
@@ -519,7 +520,45 @@ a {
   }
 }
 
-/*------------------------------------------------------------------------*/
+/*---------------------------cases-section----------------------------------------*/
+
+.cases {
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.cases__title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cases__content {
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 2px white;
+  margin: 20px auto;
+}
+
+.cases__content h3 {
+  text-align: center;
+  color: rgb(241, 220, 150);
+}
+
+.slider {
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.slider img {
+  width: 100vh;
+  border-radius: 5px;
+}
+
+/*-------------------------------------------------------------------------------*/
 
 @media (max-width: 900px) {
   .menu {
