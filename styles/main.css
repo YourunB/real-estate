@@ -643,7 +643,35 @@ a {
   }
 }
 
-/*-----------------------------------------------------------------------------*/
+/*----------------------------footer----------------------------------------*/
+
+.footer {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Iowan Old Style';
+  font-size: 2rem;
+  transition: 0.7s;
+}
+
+.footer__link {
+  width: 100%;
+  text-align: right;
+}
+
+/*--------------------------------------------------------------------------*/
 
 @media (max-width: 900px) {
   .menu {
