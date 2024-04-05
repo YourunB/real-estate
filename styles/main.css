@@ -3,7 +3,9 @@ html {
   background: black;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -14,7 +16,11 @@ body {
   font-family: Inter;
   line-height: 150%;
   min-width: 360px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow:
+    -1px 0 black,
+    0 1px black,
+    1px 0 black,
+    0 -1px black;
 }
 
 a {
@@ -47,13 +53,12 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  font-family: 'Iowan Old Style';
+  font-family: "Iowan Old Style";
   font-size: 2rem;
   transition: 0.7s;
 }
 
-
-@media (hover:hover) {
+@media (hover: hover) {
   .company a:hover {
     transform: scale(1.1);
   }
@@ -119,7 +124,7 @@ a {
 }
 
 .header__burger-menu::before {
-  content: '';
+  content: "";
   width: 17.5px;
   height: 1.5px;
   display: block;
@@ -132,7 +137,7 @@ a {
 }
 
 .header__burger-menu::after {
-  content: '';
+  content: "";
   width: 17.5px;
   height: 1.5px;
   display: block;
@@ -154,7 +159,7 @@ a {
   rotate: -45deg;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .menu__list__item:hover,
   .header__burger-menu:hover {
     transform: scale(1.1);
@@ -170,7 +175,7 @@ a {
 /*-----------------confidence-section-------------------------*/
 
 .confidence {
-  background-image: url('../assets/images/confidence.jpeg');
+  background-image: url("../assets/images/confidence.jpeg");
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -224,7 +229,7 @@ a {
   transition: 0.7s;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .form-calculate__btn:hover {
     cursor: pointer;
     background: white;
@@ -278,7 +283,7 @@ a {
   transition: 0.7s;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .modal-window__btn:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -315,7 +320,7 @@ a {
 }
 
 .advantages__box__list__item::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   background: white;
@@ -340,7 +345,7 @@ a {
   transition: 0.7s;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .advantages__box__btn:hover {
     cursor: pointer;
     background: white;
@@ -408,7 +413,7 @@ a {
   text-align: center;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .window-application__form__btn:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -482,7 +487,7 @@ a {
   transition: 0.7s;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .why-us__insurance__btn:hover {
     cursor: pointer;
     background: white;
@@ -566,7 +571,7 @@ a {
 /*----------------------------about-section-------------------------------------------*/
 
 .about {
-  background-image: url('../assets/images/company.jpg');
+  background-image: url("../assets/images/company.jpg");
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -582,7 +587,7 @@ a {
   transition: 0.5s;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .link-btn:hover {
     cursor: pointer;
     transform: scale(1.5);
@@ -598,7 +603,7 @@ a {
 
 .family {
   margin: 60px 0 20px 0;
-  background-image: url('../assets/images/family.jpg');
+  background-image: url("../assets/images/family.jpg");
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -623,7 +628,7 @@ a {
   transition: 0.7s;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .family__btn:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -665,7 +670,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-family: 'Iowan Old Style';
+  font-family: "Iowan Old Style";
   font-size: 2rem;
   transition: 0.7s;
 }
@@ -745,13 +750,23 @@ a {
   height: 5px;
 }
 
-*::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, 0.0);}
-*::-webkit-scrollbar-track:hover {background-color: rgba(0, 0, 0, 0.0);}
-*::-webkit-scrollbar-track:active {background-color: rgba(0, 0, 0, 0.0);}
+*::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-track:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-track:active {
+  background-color: rgba(0, 0, 0, 0);
+}
 
 *::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: white; 
+  background-color: white;
 }
-*::-webkit-scrollbar-thumb:hover {background-color: white;}
-*::-webkit-scrollbar-thumb:active {background-color: white;}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: white;
+}
