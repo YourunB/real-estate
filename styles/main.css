@@ -558,7 +558,38 @@ a {
   border-radius: 5px;
 }
 
-/*-------------------------------------------------------------------------------*/
+/*----------------------------about-section-------------------------------------------*/
+
+.about {
+  background-image: url('../assets/images/company.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.link-btn {
+  width: 15px;
+  transition: 0.5s;
+}
+
+@media (hover:hover) {
+  .link-btn:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+}
+
+.link-btn:active {
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+
+/*---------------------------------------------------------------------------------*/
 
 @media (max-width: 900px) {
   .menu {
