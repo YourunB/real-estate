@@ -423,13 +423,71 @@ a {
   border: solid 2px white;
   overflow: hidden;
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .why-us__content {
   z-index: 100;
   text-align: center;
+}
+
+.why-us__insurance {
+  max-width: 500px;
+  width: 100%;
+  z-index: 100;
+  background: black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.why-us__insurance__box {
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 0 20px 20px 0;
+}
+
+.why-us__insurance__box__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.why-us__insurance__box__logo img {
+  max-width: 100px;
+}
+
+.why-us__insurance__btn {
+  background: none;
+  outline: none;
+  min-height: 50px;
+  padding: 5px;
+  border-radius: 3px;
+  border: solid 2px white;
+  color: white;
+  display: block;
+  margin: 20px auto 0 auto;
+  min-width: 200px;
+  transition: 0.7s;
+}
+
+@media (hover:hover) {
+  .why-us__insurance__btn:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    transform: scale(1.1);
+  }
+}
+
+.why-us__insurance__btn:active {
+  transition: 0.2s;
+  transform: scale(0.9);
 }
 
 .why-us__back-img {
@@ -510,6 +568,10 @@ a {
   .confidence__content {
     flex-wrap: wrap;
     text-align: center;
+  }
+
+  .why-us {
+    flex-wrap: wrap;
   }
 }
 
