@@ -417,9 +417,40 @@ a {
 /*----------------------------why-us--------------------------------------*/
 
 .why-us {
+  position: relative;
   min-height: 600px;
   width: 100%;
   border: solid 2px white;
+  overflow: hidden;
+}
+
+.why-us__back-img {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.why-us__back-img_animation {
+  animation: change-img infinite 10s linear;
+}
+
+@keyframes change-img {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
 }
 
 /*------------------------------------------------------------------------*/

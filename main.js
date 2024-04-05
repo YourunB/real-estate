@@ -7,6 +7,7 @@ const btnModal = document.getElementById('modal-btn');
 const btnCancelApplication = document.getElementById('btn-cancel-application');
 const windowApplication = document.getElementById('window-application');
 const btnOpenApplication = document.getElementById('btn-open-application');
+const collectionBackImg = document.getElementsByClassName('why-us__back-img');
 
 btnMenu.addEventListener('click', () => {
   menu.classList.toggle('menu_show');
@@ -37,3 +38,19 @@ btnCancelApplication.addEventListener('click', (event) => {
 btnOpenApplication.addEventListener('click', () => {
   windowApplication.classList.add('window-application_show');
 });
+
+collectionBackImg[0].classList.add('why-us__back-img_animation');
+setInterval(() => {
+  for (let i = 0; i < collectionBackImg.length; i += 1) {
+    if (collectionBackImg[i].classList.contains('why-us__back-img_animation') && i < collectionBackImg.length - 1) {
+      collectionBackImg[i + 1].classList.add('why-us__back-img_animation');
+      collectionBackImg[i].classList.remove('why-us__back-img_animation');
+      return;
+    }
+    if (i === collectionBackImg.length - 1) {
+      collectionBackImg[0].classList.add('why-us__back-img_animation');
+      collectionBackImg[3].classList.remove('why-us__back-img_animation');
+      return;
+    }
+  }
+}, 9980)
