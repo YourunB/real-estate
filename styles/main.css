@@ -739,3 +739,19 @@ a {
     font-size: 1.5rem;
   }
 }
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, 0.0);}
+*::-webkit-scrollbar-track:hover {background-color: rgba(0, 0, 0, 0.0);}
+*::-webkit-scrollbar-track:active {background-color: rgba(0, 0, 0, 0.0);}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: white; 
+}
+*::-webkit-scrollbar-thumb:hover {background-color: white;}
+*::-webkit-scrollbar-thumb:active {background-color: white;}
