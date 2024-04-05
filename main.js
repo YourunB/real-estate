@@ -14,6 +14,7 @@ const btnOpenApplicationInsurence = document.getElementById(
 const btnOpenApplicationAbout = document.getElementById(
   "btn-about-application",
 );
+const menuItemApplication = document.getElementById('menu-item-application');
 
 btnMenu.addEventListener("click", () => {
   menu.classList.toggle("menu_show");
@@ -53,6 +54,10 @@ btnOpenApplicationInsurence.addEventListener("click", () => {
 });
 
 btnOpenApplicationAbout.addEventListener("click", () => {
+  windowApplication.classList.add("window-application_show");
+});
+
+menuItemApplication.addEventListener("click", () => {
   windowApplication.classList.add("window-application_show");
 });
 
