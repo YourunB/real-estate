@@ -25,6 +25,14 @@ a {
 /*---------------------------header-----------------------------*/
 
 .header {
+  width: 100%;
+  position: sticky;
+  z-index: 900;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.header-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -32,10 +40,6 @@ a {
   max-width: 1440px;
   height: 60px;
   margin: auto;
-  position: sticky;
-  z-index: 900;
-  top: 0;
-  background: rgba(0, 0, 0, 0.9);
 }
 
 .company a {
@@ -681,7 +685,7 @@ a {
     width: 100%;
     background: rgba(0, 0, 0, 0.9);
     transform: translateX(-150%);
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
