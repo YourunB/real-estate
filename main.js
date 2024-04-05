@@ -9,6 +9,7 @@ const windowApplication = document.getElementById('window-application');
 const btnOpenApplication = document.getElementById('btn-open-application');
 const collectionBackImg = document.getElementsByClassName('why-us__back-img');
 const btnOpenApplicationInsurence = document.getElementById('btn-insurance-application');
+const btnOpenApplicationAbout = document.getElementById('btn-about-application');
 
 btnMenu.addEventListener('click', () => {
   menu.classList.toggle('menu_show');
@@ -41,6 +42,10 @@ btnOpenApplication.addEventListener('click', () => {
 });
 
 btnOpenApplicationInsurence.addEventListener('click', () => {
+  windowApplication.classList.add('window-application_show');
+});
+
+btnOpenApplicationAbout.addEventListener('click', () => {
   windowApplication.classList.add('window-application_show');
 });
 

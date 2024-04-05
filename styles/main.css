@@ -170,6 +170,7 @@ a {
   background-size: cover;
   background-position: center;
   border-radius: 5px;
+  min-height: 600px;
 }
 
 .confidence__content {
@@ -589,7 +590,60 @@ a {
   transform: scale(0.9);
 }
 
-/*---------------------------------------------------------------------------------*/
+/*-----------------------------family-section-----------------------------------*/
+
+.family {
+  margin: 60px 0 20px 0;
+  background-image: url('../assets/images/family.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: zoomBackground 30s infinite linear;
+}
+
+.family__btn {
+  font-weight: 700;
+  padding: 5px;
+  background: white;
+  min-height: 50px;
+  border-radius: 3px;
+  border: solid 2px white;
+  outline: none;
+  display: block;
+  margin: auto;
+  transition: 0.7s;
+}
+
+@media (hover:hover) {
+  .family__btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.family__btn:active {
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+
+@keyframes zoomBackground {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+/*-----------------------------------------------------------------------------*/
 
 @media (max-width: 900px) {
   .menu {
