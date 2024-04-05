@@ -8,6 +8,7 @@ const btnCancelApplication = document.getElementById('btn-cancel-application');
 const windowApplication = document.getElementById('window-application');
 const btnOpenApplication = document.getElementById('btn-open-application');
 const collectionBackImg = document.getElementsByClassName('why-us__back-img');
+const btnOpenApplicationInsurence = document.getElementById('btn-insurance-application');
 
 btnMenu.addEventListener('click', () => {
   menu.classList.toggle('menu_show');
@@ -36,6 +37,10 @@ btnCancelApplication.addEventListener('click', (event) => {
 });
 
 btnOpenApplication.addEventListener('click', () => {
+  windowApplication.classList.add('window-application_show');
+});
+
+btnOpenApplicationInsurence.addEventListener('click', () => {
   windowApplication.classList.add('window-application_show');
 });
 
