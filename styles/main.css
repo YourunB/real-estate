@@ -178,6 +178,8 @@ a {
   background-image: url("../assets/images/confidence.jpeg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   border-radius: 5px;
   min-height: 600px;
 }
@@ -566,14 +568,17 @@ a {
 .slider img {
   width: 100vh;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 /*----------------------------about-section-------------------------------------------*/
 
 .about {
   background-image: url("../assets/images/company.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   min-height: 600px;
   border-radius: 5px;
   display: flex;
@@ -604,6 +609,7 @@ a {
 .family {
   margin: 60px 0 20px 0;
   background-image: url("../assets/images/family.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -733,6 +739,11 @@ a {
 
   .why-us {
     flex-wrap: wrap;
+  }
+
+  .family {
+    animation: none;
+    background-attachment: fixed;
   }
 }
 
