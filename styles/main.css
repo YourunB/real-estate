@@ -422,6 +422,14 @@ a {
   width: 100%;
   border: solid 2px white;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-us__content {
+  z-index: 100;
+  text-align: center;
 }
 
 .why-us__back-img {
